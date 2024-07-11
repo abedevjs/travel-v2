@@ -1,12 +1,12 @@
 function ButtonCTA() {
   return (
     <div className=" px-2 py-1 flex items-center gap-2 bg-[#25D366] rounded-md">
-      <span className=" text-[clamp(0.75rem,0.5571rem+0.8571vw,0.9rem)] text-primary-900 font-medium">
+      <span className=" text-[clamp(0.75rem,0.6291rem+0.5373vw,1.2rem)] text-primary-900 font-medium">
         Registrasi
       </span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className=" w-[clamp(1rem,0.7429rem+1.1429vw,1.2rem)] h-auto "
+        className=" w-[clamp(1rem,0.8657rem+0.597vw,1.5rem)] h-auto "
         viewBox="0 0 16 16"
       >
         <path

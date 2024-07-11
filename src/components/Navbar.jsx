@@ -29,7 +29,7 @@ function Navbar() {
 
       {/* MENU */}
       {!isMobileMode && (
-        <ul className="flex gap-4 lg:gap-6">
+        <ul className="flex items-center gap-4 lg:gap-6">
           {menus.map((menu, index) => (
             <li
               className=" text-[clamp(0.8rem,0.4704rem+0.6867vw,1.2rem)] text-primary-50 hover:text-accent-400 duration-300 cursor-pointer"
@@ -38,6 +38,7 @@ function Navbar() {
               {menu.name}
             </li>
           ))}
+          <ButtonCTA />
         </ul>
       )}
     </div>

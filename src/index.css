@@ -54,5 +54,5 @@ nav a.active {
   /* text-shadow: -1px 1px 0 #000, 1px 1px 0 transparent, 1px -1px 0 transparent,
     -1px -1px 0 transparent; */
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-color: black;
 }
