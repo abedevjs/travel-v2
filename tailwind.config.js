@@ -2,16 +2,6 @@
 export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    screens: {
-      // xl: { max: "1440px" },
-      // lg: { max: "976px" },
-      // md: { max: "768px" },
-      // sm: { max: "480px" },
-    },
-    // container: {
-    //   center: true,
-    //   padding: '2rem',
-    // },
     extend: {
       colors: {
         primary: {
