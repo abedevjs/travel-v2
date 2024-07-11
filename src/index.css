@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* rgba(217, 4, 41) #D90429 */
+
+:root {
+  /* --main-color-primary: 217, 4, 41;
+  --main-color-primaryTint: 239, 35, 60; */
+}
+
+body {
+  font-family: "Fredoka", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #141c24; /* primary-950 */
+  color: #b7c7d7; /* primary-200 */
+}
+
+.titleColor {
+  color: #d2af84;
+}
+
+nav a.active {
+  /* color: #1f2937;
+  font-weight: 500; */
+}
+
+/* bg-[linear-gradient(to_bottom,rgba(252,4,80,0.4),rgba(244,162,11,0.4))] */
+.bGLinearGradient {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(var(--main-color-primary), 0.4),
+    rgba(var(--main-color-primaryTint), 0.4)
+  );
+}
+
+/* bg-[linear-gradient(to_right_bottom,rgba(252,4,80,0.7),rgba(244,162,11,0.7)),url('/public/images/kaaba.jpg')] */
+.bgLinearAndImage {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(var(--main-color-primary), 0.4),
+    rgba(var(--main-color-primaryTint), 0.4),
+    url("/public/images/kaaba.jpg")
+  );
+}
+
+/* grid grid-cols-[repeat(auto-fit,minmax(6rem,7rem))] */
+/* grid grid-cols-[repeat(auto-fit,minmax(6rem,min-content))] */
+/* grid grid-cols-[repeat(auto-fit,minmax(6rem,1fr))] */
+
+.textShadowAbe {
+  /* text-shadow: -1px 1px 0 #000, 1px 1px 0 transparent, 1px -1px 0 transparent,
+    -1px -1px 0 transparent; */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
