@@ -57,6 +57,7 @@ export default {
 
     fontFamily: {
       primary: ["K2D", "sans-serif"],
+      // arabic: ["Noto Naskh Arabic", "serif"],
       // text: ["Lexend", "sans-serif"],
     },
   },

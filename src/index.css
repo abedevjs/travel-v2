@@ -1,13 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400..700&display=swap"); */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* rgba(217, 4, 41) #D90429 */
+/* rgba(221, 194, 162) #DDC2A2 accent 300*/
+/* rgba(183, 131, 67) #B78343 accent 600*/
 
 :root {
-  /* --main-color-primary: 217, 4, 41;
-  --main-color-primaryTint: 239, 35, 60; */
+  --main-color-primary: 221, 194, 162;
+  --main-color-primaryTint: 183, 131, 67;
 }
 
 body {
