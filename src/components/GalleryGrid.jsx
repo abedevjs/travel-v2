@@ -29,10 +29,6 @@ function GalleryGrid({ data = [] }) {
               {file.type === "img" ? (
                 // Media
                 <div className="relative">
-                  {/* <Icon
-                    icon="ep:picture-filled"
-                    className=" w-8 h-8 self-end text-white opacity-80 cursor-pointer absolute bottom-2 left-2 "
-                  /> */}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="w-8 h-8 self-end opacity-80 cursor-pointer absolute bottom-2 left-2"
@@ -44,7 +40,7 @@ function GalleryGrid({ data = [] }) {
                     />
                   </svg>
                   <LazyImage
-                    className="lozad object-cover object-center w-full h-40 max-w-full rounded-sm cursor-pointer duration-300 hover:scale-110 opacity-50 hover:opacity-100"
+                    className=" object-cover object-center w-full h-40 max-w-full rounded-sm cursor-pointer duration-300 hover:scale-110 opacity-50 hover:opacity-100"
                     // src={file.url}
                     imageSmall={file.imageUrlSM}
                     imageLarge={file.imageUrlLG}
@@ -53,10 +49,6 @@ function GalleryGrid({ data = [] }) {
                 </div>
               ) : (
                 <div className="relative">
-                  {/* <Icon
-                    icon="carbon:play-filled"
-                    className=" w-8 h-8 self-end text-white opacity-80 cursor-pointer absolute bottom-2 left-2 "
-                  /> */}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="w-8 h-8 self-end opacity-80 cursor-pointer absolute bottom-2 left-2"

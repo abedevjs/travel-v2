@@ -4,14 +4,14 @@ function ButtonCTA() {
       href="https://whatsapp.com"
       rel="noreferrer"
       target="_blank"
-      className=" px-4 py-2 flex items-center gap-2 bg-[#25D366] rounded-md opacity-100 hover:bg-accent-600 duration-300"
+      className=" px-4 py-2 flex items-center gap-2 bg-[#25D366] rounded-md opacity-100 hover:bg-accent-600 duration-300 "
     >
-      <span className=" text-[clamp(0.75rem,0.6291rem+0.5373vw,1.2rem)] text-primary-900 font-medium">
+      <span className=" text-[clamp(0.75rem,0.6291rem+0.5373vw,1.2rem)] text-primary-900 font-medium ">
         Registrasi
       </span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className=" w-[clamp(1rem,0.8657rem+0.597vw,1.5rem)] h-auto "
+        className=" w-[clamp(1rem,0.8657rem+0.597vw,1.5rem)] h-auto"
         viewBox="0 0 16 16"
       >
         <path

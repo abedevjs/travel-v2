@@ -1,3 +1,4 @@
+import lozad from "lozad";
 import { useInView } from "react-intersection-observer";
 import { useMediaQuery } from "react-responsive";
 
@@ -15,6 +16,11 @@ function LazyImage({ src, alt, imageSmall, imageLarge, className, onClick }) {
   // console.log("inview:", inView);
   // console.log("isIntersecting:", entry?.isIntersecting);
   // console.log(useInView({}));
+
+  //https://apoorv.pro/lozad.js/
+  const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+  observer.observe();
+
   return (
     <picture>
       <source
@@ -27,7 +33,7 @@ function LazyImage({ src, alt, imageSmall, imageLarge, className, onClick }) {
         src={(inView && imageSmall) || imageLarge || src || ""}
         loading="lazy"
         alt={alt}
-        className={`lazy-image ${className || ""}`}
+        className={`lozad lazy-image ${className || ""}`}
         onClick={onClick}
       />
     </picture>

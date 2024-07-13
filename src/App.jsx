@@ -3,10 +3,12 @@
 // import './App.css'
 
 import dataDokumentasi from "../public/docs/dataDokumentasi";
+import dataPerlengkapan from "../public/docs/dataPerlengkapan";
 import DividerSection from "./components/DividerSection";
 import GalleryGrid from "./components/GalleryGrid";
 import Header from "./components/Header";
 import QoranVerse from "./components/QoranVerse";
+import SliderInfiniteLeft from "./components/SliderInfiniteLeft";
 import FramerReveal from "./helpers/FramerReveal";
 
 function App() {
@@ -27,6 +29,13 @@ function App() {
 
       <FramerReveal>
         <DividerSection title="Perlengkapan Eksklusif" />
+      </FramerReveal>
+      <FramerReveal>
+        <SliderInfiniteLeft data={dataPerlengkapan} />
+      </FramerReveal>
+
+      <FramerReveal>
+        <DividerSection title="Variasi Paket Terjangkau" />
       </FramerReveal>
     </div>
   );

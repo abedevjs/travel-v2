@@ -1,3 +1,4 @@
+import lozad from "lozad";
 import { useInView } from "react-intersection-observer";
 import { useMediaQuery } from "react-responsive";
 
@@ -7,8 +8,12 @@ function LazyVideo({ src, videoSmall, videoLarge, alt, className }) {
     triggerOnce: true, // Only trigger once when the element comes into view
   });
 
+  //https://apoorv.pro/lozad.js/
+  const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+  observer.observe();
+
   return (
-    <video ref={ref} className={`${className || ""}`} alt={alt}>
+    <video ref={ref} className={`lozad ${className || ""}`} alt={alt}>
       {/* {entry?.isIntersecting && <source src={src} />} */}
       {entry?.isIntersecting && isMobileMode && <source src={videoSmall} />}
       {entry?.isIntersecting && !isMobileMode && <source src={videoLarge} />}
