@@ -48,12 +48,12 @@ const dataPerlengkapan = [
     image: "/images/perlengkapan/kainihram.png",
   },
   {
-    name: "Mukenah",
-    image: "/images/perlengkapan/mukenah.png",
-  },
-  {
     name: "Sabuk Ihram",
     image: "/images/perlengkapan/sabuk.png",
+  },
+  {
+    name: "Mukenah",
+    image: "/images/perlengkapan/mukenah.png",
   },
   {
     name: "Sajadah",

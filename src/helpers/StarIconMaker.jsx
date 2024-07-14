@@ -9,7 +9,7 @@ function StarIconMaker({ star = 3, size = 5 }) {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       fill="currentColor"
-      className={`h-${size} w-${size} text-yellow-700 inline-block`}
+      className={`h-${size} w-${size} text-accent-500 inline-block`}
     >
       <path
         fillRule="evenodd"

@@ -7,7 +7,6 @@ function SliderInfiniteLeft({ data = [] }) {
   let width = isMobileMode ? "150px" : "200px";
   let height = isMobileMode ? "150px" : "200px";
   // `calc(30s /${data.length}  * (${data.length} - ${index + 1}) * -1)`
-  console.log(data.length);
   return (
     <div
       style={{ height: `${height}` }}
