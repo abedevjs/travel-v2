@@ -29,7 +29,7 @@ function Navbar({ onClick }) {
 
       {/* MENU */}
       {!isMobileMode && (
-        <ul className="flex items-center gap-4 lg:gap-6">
+        <ul className="flex items-center gap-2 lg:gap-6">
           {menus.map((menu, index) => (
             <li
               onClick={() => onClick(`${menu.name}`)}

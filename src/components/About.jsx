@@ -2,10 +2,10 @@ import dataCompany from "../../public/docs/dataCompany";
 
 function About() {
   return (
-    <div className=" p-8 max-w-4xl h-fit mx-auto bg-primary-900 rounded-md space-y-8">
+    <div className=" p-3 md:p-8 max-w-4xl h-fit mx-auto bg-primary-900 rounded-md space-y-8">
       {/* SPEECH */}
-      <p className=" font-light">
-        Assalaamu `alaikum Warahmatullahi Wabarakatuh, <br /> Kami{" "}
+      <p className=" text-[clamp(0.8rem,0.6925rem+0.4776vw,1.2rem)] font-light">
+        Assalaamu `alaikum Warahmatullahi Wabarakatuh, <br /> <br /> Kami{" "}
         {dataCompany.companyLawName} adalah perusahaan wisata yang fokus pada
         pelayanan pemberangkatan jama`ah umrah yang berdiri sejak tahun{" "}
         {dataCompany.year} di kota {dataCompany.city}.
@@ -39,9 +39,11 @@ function About() {
         <div className="flex flex-col  space-y-4">
           <p>
             Alamat kantor: <br />{" "}
-            <span className=" font-light">{dataCompany.address}</span>
+            <span className=" text-[clamp(0.8rem,0.6925rem+0.4776vw,1.2rem)] font-light">
+              {dataCompany.address}
+            </span>
           </p>
-          <span className=" font-light text-sm">
+          <span className="text-[clamp(0.8rem,0.6925rem+0.4776vw,1.2rem)] font-light">
             Lihat alamat di{" "}
             <a
               href={dataCompany.googleMap}

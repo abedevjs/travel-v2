@@ -15,14 +15,14 @@ const dataPerlengkapan = [
     name: "Tas Selempang",
     image: "/images/perlengkapan/selempang.png",
   },
-  {
-    name: "Totebag",
-    image: "/images/perlengkapan/totebag.png",
-  },
-  {
-    name: "Clutch",
-    image: "/images/perlengkapan/clutch.png",
-  },
+  // {
+  //   name: "Totebag",
+  //   image: "/images/perlengkapan/totebag.png",
+  // },
+  // {
+  //   name: "Clutch",
+  //   image: "/images/perlengkapan/clutch.png",
+  // },
   {
     name: "Tas Serut",
     image: "/images/perlengkapan/serut.png",
@@ -35,10 +35,10 @@ const dataPerlengkapan = [
     name: "Syal",
     image: "/images/perlengkapan/syal.png",
   },
-  {
-    name: "Termos",
-    image: "/images/perlengkapan/termos.png",
-  },
+  // {
+  //   name: "Termos",
+  //   image: "/images/perlengkapan/termos.png",
+  // },
   {
     name: "Seragam",
     image: "/images/perlengkapan/seragam.png",
@@ -55,10 +55,10 @@ const dataPerlengkapan = [
     name: "Mukenah",
     image: "/images/perlengkapan/mukenah.png",
   },
-  {
-    name: "Sajadah",
-    image: "/images/perlengkapan/sajadah.png",
-  },
+  // {
+  //   name: "Sajadah",
+  //   image: "/images/perlengkapan/sajadah.png",
+  // },
   {
     name: "Buku Do'a",
     image: "/images/perlengkapan/buku.png",

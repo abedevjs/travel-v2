@@ -4,8 +4,10 @@ import { useMediaQuery } from "react-responsive";
 function SliderInfiniteLeft({ data = [] }) {
   const isMobileMode = useMediaQuery({ query: "(max-width: 680px)" });
 
-  let width = isMobileMode ? "150px" : "200px";
-  let height = isMobileMode ? "150px" : "200px";
+  // let width = isMobileMode ? "150px" : "200px";
+  let width = "200px";
+  // let height = isMobileMode ? "150px" : "200px";
+  let height = "200px";
   // `calc(30s /${data.length}  * (${data.length} - ${index + 1}) * -1)`
   return (
     <div
