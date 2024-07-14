@@ -19,7 +19,7 @@ function PaketDetailCard({ gradColor = "", singleColor = "", data = {} }) {
   // h-[54rem]
   return (
     <FramerReveal>
-      <div className="w-[20rem] h-fit p-2 pb-3 bg-primary-900 border border-accent-400 rounded-tr-full rounded-tl-full shadow-md shadow-gray-800 hover:shadow-lg hover:shadow-gray-800 duration-300 flex flex-col justify-between">
+      <div className="w-[20rem] h-fit p-2 pb-3 bg-primary-900 border border-accent-400 rounded-tr-full rounded-tl-full shadow-md shadow-accent-500 hover:shadow-lg hover:shadow-accent-500 duration-300 flex flex-col justify-between">
         {/* TITLE */}
         <div
           style={{
@@ -175,8 +175,8 @@ function PaketDetailCard({ gradColor = "", singleColor = "", data = {} }) {
         {/* DISCLAIMER */}
         <div className="text-xs italic">
           <p className=" before:content-['*']">
-            Harga belum termasuk: Pembuatan paspor, vaksin (jika diperlukan),
-            kelebihan bagasi.
+            Harga belum termasuk: Pembuatan paspor, vaksin Meningitis, kelebihan
+            bagasi.
           </p>
           <p className=" before:content-['**']">Atau setaraf</p>
         </div>

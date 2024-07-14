@@ -12,6 +12,9 @@ import QoranVerse from "./components/QoranVerse";
 import SliderInfiniteLeft from "./components/SliderInfiniteLeft";
 import FramerReveal from "./helpers/FramerReveal";
 import dataPaket from "../public/docs/dataPaket";
+import dataCompany from "../public/docs/dataCompany";
+import About from "./components/About";
+import ButtonCTA from "./components/ButtonCTA";
 
 function App() {
   const isMobileMode = useMediaQuery({ query: "(max-width: 640px)" });
@@ -55,6 +58,24 @@ function App() {
               data={item}
             />
           ))}
+        </div>
+      </FramerReveal>
+
+      <FramerReveal>
+        <DividerSection title={`Tentang ${dataCompany.companyShortName}`} />
+      </FramerReveal>
+      <FramerReveal>
+        <About />
+      </FramerReveal>
+
+      <FramerReveal>
+        <DividerSection
+          title={`Mari mengunjungi Baitul Haram bersama ${dataCompany.companyShortName}`}
+        />
+      </FramerReveal>
+      <FramerReveal>
+        <div className=" w-fit mx-auto mb-8">
+          <ButtonCTA />
         </div>
       </FramerReveal>
     </div>
