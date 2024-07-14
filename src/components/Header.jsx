@@ -14,13 +14,17 @@ function Header({ onClick }) {
       className={` h-[100dvh] w-full mx-auto bg-cover bg-center bg-[linear-gradient(to_right_bottom,rgba(44,61,79,0.8),rgba(20,28,36,0.8)),url('/public/images/kaabaSM.jpg')] mix-blend-difference overflow-hidden`}
     >
       <Navbar onClick={onClick} />
-      {isMobileMode ? <MobileContent /> : <DesktopContent />}
+      {isMobileMode ? (
+        <MobileContent onClick={onClick} />
+      ) : (
+        <DesktopContent onClick={onClick} />
+      )}
       {/* <MobileContent /> */}
     </div>
   );
 }
 
-function MobileContent() {
+function MobileContent({ onClick }) {
   return (
     /* (TEXT, BUTTON) & IMAGE */
     <div className=" w-full h-full mx-auto flex flex-col items-center justify-around overflow-hidden ">
@@ -41,14 +45,14 @@ function MobileContent() {
 
       {/* Button */}
       <FramerReveal>
-        <Button />
+        <Button onClick={onClick} />
       </FramerReveal>
 
       {/* Image */}
       <FramerReveal>
         <div className=" h-[35%] w-auto overflow-hidden">
           <img
-            src="/public/images/ihram1.png"
+            src="/images/ihram1.png"
             className=" h-full w-full block"
             alt="ihram"
           />
@@ -58,7 +62,7 @@ function MobileContent() {
   );
 }
 
-function DesktopContent() {
+function DesktopContent({ onClick }) {
   const isDesktopMode = useMediaQuery({ query: "(min-width: 1100px)" });
   return (
     <div className="w-full h-[80vh] mx-auto py-4 md:py-0 md:px-10 flex flex-col md:flex-row items-center justify-between md:justify-evenly overflow-hidden">
@@ -88,7 +92,7 @@ function DesktopContent() {
           </div>
           <div>
             {/* <CtaButton /> */}
-            <Button />
+            <Button onClick={onClick} />
           </div>
         </div>
       </FramerReveal>

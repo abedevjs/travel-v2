@@ -1,6 +1,9 @@
-function Button() {
+function Button({ onClick }) {
   return (
-    <button className=" px-4 py-2 rounded-md flex items-center gap-2 bg-accent-400 cursor-pointer">
+    <button
+      onClick={() => onClick("Paket")}
+      className=" px-4 py-2 rounded-md flex items-center gap-2 bg-accent-400 cursor-pointer"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className=" w-5 h-auto animate-bounce"
