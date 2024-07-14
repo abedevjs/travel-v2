@@ -17,7 +17,7 @@ const menus = [
   },
 ];
 
-function Navbar() {
+function Navbar({ onClick }) {
   const isMobileMode = useMediaQuery({ query: "(max-width: 640px)" });
   const isTabletMode = useMediaQuery({ query: "(max-width: 768px)" });
   return (
@@ -32,6 +32,7 @@ function Navbar() {
         <ul className="flex items-center gap-4 lg:gap-6">
           {menus.map((menu, index) => (
             <li
+              onClick={() => onClick(`${menu.name}`)}
               className=" text-[clamp(0.8rem,0.4704rem+0.6867vw,1.2rem)] text-primary-50 hover:text-accent-400 duration-300 cursor-pointer"
               key={index}
             >

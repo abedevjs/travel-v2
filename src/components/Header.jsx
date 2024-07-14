@@ -4,7 +4,7 @@ import Button from "./Button";
 import Navbar from "./Navbar";
 import { useMediaQuery } from "react-responsive";
 
-function Header() {
+function Header({ onClick }) {
   const isMobileMode = useMediaQuery({ query: "(max-width: 1000px)" });
   const isTabletMode = useMediaQuery({ query: "(max-width: 768px)" });
 
@@ -13,7 +13,7 @@ function Header() {
     <div
       className={` h-[100dvh] w-full mx-auto bg-cover bg-center bg-[linear-gradient(to_right_bottom,rgba(44,61,79,0.8),rgba(20,28,36,0.8)),url('/public/images/kaabaSM.jpg')] mix-blend-difference overflow-hidden`}
     >
-      <Navbar />
+      <Navbar onClick={onClick} />
       {isMobileMode ? <MobileContent /> : <DesktopContent />}
       {/* <MobileContent /> */}
     </div>

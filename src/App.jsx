@@ -1,6 +1,4 @@
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-// import './App.css'
+import { useEffect, useRef, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import dataDokumentasi from "../public/docs/dataDokumentasi";
 import dataPerlengkapan from "../public/docs/dataPerlengkapan";
@@ -17,56 +15,80 @@ import About from "./components/About";
 import ButtonCTA from "./components/ButtonCTA";
 
 function App() {
+  const [currentSection, setCurrentSection] = useState("");
   const isMobileMode = useMediaQuery({ query: "(max-width: 640px)" });
   const gridColsSetting = isMobileMode
     ? `grid-cols-[repeat(auto-fit,minmax(20rem,1fr))]`
     : `grid-cols-[repeat(auto-fit,minmax(20rem,max-content))] `;
+
+  const ref = useRef();
+  useEffect(() => {
+    if (!currentSection) return;
+    let pos = ref.current.getBoundingClientRect().top;
+    window.scrollTo({
+      top: pos,
+      behavior: "smooth",
+    });
+
+    return () => {
+      setCurrentSection("");
+    };
+  }, [currentSection]);
+
   return (
     <div className=" flex flex-col">
-      <Header />
+      <Header onClick={setCurrentSection} />
 
       <FramerReveal>
         <QoranVerse />
       </FramerReveal>
 
-      <FramerReveal>
-        <DividerSection title="Dokumentasi Jama`ah" />
-      </FramerReveal>
-      <FramerReveal>
-        <GalleryGrid data={dataDokumentasi} />
-      </FramerReveal>
+      <div ref={currentSection == "Dokumentasi" ? ref : null}>
+        <FramerReveal>
+          <DividerSection title="Dokumentasi Jama`ah" />
+        </FramerReveal>
+        <FramerReveal>
+          <GalleryGrid data={dataDokumentasi} />
+        </FramerReveal>
+      </div>
 
-      <FramerReveal>
-        <DividerSection title="Perlengkapan Eksklusif" />
-      </FramerReveal>
-      <FramerReveal>
-        <SliderInfiniteLeft data={dataPerlengkapan} />
-      </FramerReveal>
+      <div ref={currentSection == "Perlengkapan" ? ref : null}>
+        <FramerReveal>
+          <DividerSection title="Perlengkapan Eksklusif" />
+        </FramerReveal>
+        <FramerReveal>
+          <SliderInfiniteLeft data={dataPerlengkapan} />
+        </FramerReveal>
+      </div>
 
-      <FramerReveal>
-        <DividerSection title="Variasi Paket Terjangkau" />
-      </FramerReveal>
-      <FramerReveal>
-        <div
-          className={` w-[95dvw] mb-8 mx-auto grid ${gridColsSetting} justify-items-center justify-center gap-8`}
-        >
-          {dataPaket.map((item, index) => (
-            <PaketDetailCard
-              key={index}
-              gradColor="rgba(221,194,162,0.8),rgba(183,131,67,0.8)"
-              singleColor="rgba(183,131,67,0.8)"
-              data={item}
-            />
-          ))}
-        </div>
-      </FramerReveal>
+      <div ref={currentSection == "Paket" ? ref : null}>
+        <FramerReveal>
+          <DividerSection title="Variasi Paket Terjangkau" />
+        </FramerReveal>
+        <FramerReveal>
+          <div
+            className={` w-[95dvw] mb-8 mx-auto grid ${gridColsSetting} justify-items-center justify-center gap-8`}
+          >
+            {dataPaket.map((item, index) => (
+              <PaketDetailCard
+                key={index}
+                gradColor="rgba(221,194,162,0.8),rgba(183,131,67,0.8)"
+                singleColor="rgba(183,131,67,0.8)"
+                data={item}
+              />
+            ))}
+          </div>
+        </FramerReveal>
+      </div>
 
-      <FramerReveal>
-        <DividerSection title={`Tentang ${dataCompany.companyShortName}`} />
-      </FramerReveal>
-      <FramerReveal>
-        <About />
-      </FramerReveal>
+      <div ref={currentSection == "Tentang kami" ? ref : null}>
+        <FramerReveal>
+          <DividerSection title={`Tentang ${dataCompany.companyShortName}`} />
+        </FramerReveal>
+        <FramerReveal>
+          <About />
+        </FramerReveal>
+      </div>
 
       <FramerReveal>
         <DividerSection
