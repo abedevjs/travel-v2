@@ -3,182 +3,172 @@ import shuffleArray from "../../src/helpers/shuffleArray";
 // const dataDokumentasiImage = [
 //   {
 //     type: "img",
-//     imageUrlSM: "/images/dokumentasi/Madinah2SM.jpg",
-//     imageUrlLG: "/images/dokumentasi/Madinah2LG.jpg",
+//     imageUrlSM: "/images/dokumentasi/anangSM.png",
+//     imageUrlLG: "/images/dokumentasi/anangLG.png",
 //   },
 //   {
 //     type: "img",
-//     imageUrlSM: "/images/dokumentasi/Madinah7SM.jpg",
-//     imageUrlLG: "/images/dokumentasi/Madinah7LG.jpg",
+//     imageUrlSM: "/images/dokumentasi/artisSM.png",
+//     imageUrlLG: "/images/dokumentasi/artisLG.png",
 //   },
 //   {
 //     type: "img",
-//     imageUrlSM: "/images/dokumentasi/Madinah8SM.jpg",
-//     imageUrlLG: "/images/dokumentasi/Madinah8LG.jpg",
+//     imageUrlSM: "/images/dokumentasi/bclSM.png",
+//     imageUrlLG: "/images/dokumentasi/bclLG.png",
 //   },
 //   {
 //     type: "img",
-//     imageUrlSM: "/images/dokumentasi/Madinah15SM.jpg",
-//     imageUrlLG: "/images/dokumentasi/Madinah15LG.jpg",
+//     imageUrlSM: "/images/dokumentasi/bimbinganSM.png",
+//     imageUrlLG: "/images/dokumentasi/bimbinganLG.png",
 //   },
 //   {
 //     type: "img",
-//     imageUrlSM: "/images/dokumentasi/Madinah17SM.jpg",
-//     imageUrlLG: "/images/dokumentasi/Madinah17LG.jpg",
+//     imageUrlSM: "/images/dokumentasi/dindaSM.png",
+//     imageUrlLG: "/images/dokumentasi/dindaLG.png",
 //   },
 //   {
 //     type: "img",
-//     imageUrlSM: "/images/dokumentasi/Makkah4SM.jpg",
-//     imageUrlLG: "/images/dokumentasi/Makkah4LG.jpg",
+//     imageUrlSM: "/images/dokumentasi/grupSM.png",
+//     imageUrlLG: "/images/dokumentasi/grupLG.png",
 //   },
 //   {
 //     type: "img",
-//     imageUrlSM: "/images/dokumentasi/Makkah6SM.jpg",
-//     imageUrlLG: "/images/dokumentasi/Makkah6LG.jpg",
+//     imageUrlSM: "/images/dokumentasi/maiaSM.png",
+//     imageUrlLG: "/images/dokumentasi/maiaLG.png",
 //   },
 //   {
 //     type: "img",
-//     imageUrlSM: "/images/dokumentasi/Makkah9SM.jpg",
-//     imageUrlLG: "/images/dokumentasi/Makkah9LG.jpg",
+//     imageUrlSM: "/images/dokumentasi/tikoSM.png",
+//     imageUrlLG: "/images/dokumentasi/tikoLG.png",
 //   },
 //   {
 //     type: "img",
-//     imageUrlSM: "/images/dokumentasi/Makkah20SM.jpg",
-//     imageUrlLG: "/images/dokumentasi/Makkah20LG.jpg",
+//     imageUrlSM: "/images/dokumentasi/wheelchairSM.png",
+//     imageUrlLG: "/images/dokumentasi/wheelchairLG.png",
+//   },
+// ];
+
+// const dataDokumentasiVideo = [
+//   {
+//     type: "vid",
+//     videoUrlSM: "/videos/dokumentasi/pelataran1SM.mp4",
+//     videoUrlLG: "/videos/dokumentasi/pelataran1LG.mp4",
+//   },
+//   {
+//     type: "vid",
+//     videoUrlSM: "/videos/dokumentasi/pelataran1SM.mp4",
+//     videoUrlLG: "/videos/dokumentasi/pelataran1LG.mp4",
+//   },
+//   {
+//     type: "vid",
+//     videoUrlSM: "/videos/dokumentasi/pelataran1SM.mp4",
+//     videoUrlLG: "/videos/dokumentasi/pelataran1LG.mp4",
+//   },
+//   {
+//     type: "vid",
+//     videoUrlSM: "/videos/dokumentasi/pelataran1SM.mp4",
+//     videoUrlLG: "/videos/dokumentasi/pelataran1LG.mp4",
+//   },
+//   {
+//     type: "vid",
+//     videoUrlSM: "/videos/dokumentasi/tawaf1SM.mp4",
+//     videoUrlLG: "/videos/dokumentasi/tawaf1LG.mp4",
+//   },
+//   {
+//     type: "vid",
+//     videoUrlSM: "/videos/dokumentasi/tawaf1SM.mp4",
+//     videoUrlLG: "/videos/dokumentasi/tawaf1LG.mp4",
+//   },
+//   {
+//     type: "vid",
+//     videoUrlSM: "/videos/dokumentasi/tawaf1SM.mp4",
+//     videoUrlLG: "/videos/dokumentasi/tawaf1LG.mp4",
+//   },
+//   {
+//     type: "vid",
+//     videoUrlSM: "/videos/dokumentasi/tawaf1SM.mp4",
+//     videoUrlLG: "/videos/dokumentasi/tawaf1LG.mp4",
 //   },
 // ];
 
 const dataDokumentasiImage = [
   {
     type: "img",
-    imageUrlSM: "/images/dokumentasi/anangSM.png",
-    imageUrlLG: "/images/dokumentasi/anangLG.png",
+    imageUrlSM: "/images/dokumentasi/samarPswtSM.jpg",
+    imageUrlLG: "/images/dokumentasi/samarPswtLG.jpg",
   },
   {
     type: "img",
-    imageUrlSM: "/images/dokumentasi/artisSM.png",
-    imageUrlLG: "/images/dokumentasi/artisLG.png",
+    imageUrlSM: "/images/dokumentasi/samarMirrorSM.jpg",
+    imageUrlLG: "/images/dokumentasi/samarMirrorLG.jpg",
   },
   {
     type: "img",
-    imageUrlSM: "/images/dokumentasi/bclSM.png",
-    imageUrlLG: "/images/dokumentasi/bclLG.png",
+    imageUrlSM: "/images/dokumentasi/samarBrownSM.jpg",
+    imageUrlLG: "/images/dokumentasi/samarBrownLG.jpg",
   },
   {
     type: "img",
-    imageUrlSM: "/images/dokumentasi/bimbinganSM.png",
-    imageUrlLG: "/images/dokumentasi/bimbinganLG.png",
+    imageUrlSM: "/images/dokumentasi/samarArabSM.jpg",
+    imageUrlLG: "/images/dokumentasi/samarArabLG.jpg",
   },
   {
     type: "img",
-    imageUrlSM: "/images/dokumentasi/dindaSM.png",
-    imageUrlLG: "/images/dokumentasi/dindaLG.png",
+    imageUrlSM: "/images/dokumentasi/samarFenceSM.jpg",
+    imageUrlLG: "/images/dokumentasi/samarFenceLG.jpg",
   },
   {
     type: "img",
-    imageUrlSM: "/images/dokumentasi/grupSM.png",
-    imageUrlLG: "/images/dokumentasi/grupLG.png",
+    imageUrlSM: "/images/dokumentasi/samarBusSM.jpg",
+    imageUrlLG: "/images/dokumentasi/samarBusLG.jpg",
   },
   {
     type: "img",
-    imageUrlSM: "/images/dokumentasi/maiaSM.png",
-    imageUrlLG: "/images/dokumentasi/maiaLG.png",
+    imageUrlSM: "/images/dokumentasi/samarKaabaSM.jpg",
+    imageUrlLG: "/images/dokumentasi/samarKaabaLG.jpg",
   },
   {
     type: "img",
-    imageUrlSM: "/images/dokumentasi/tikoSM.png",
-    imageUrlLG: "/images/dokumentasi/tikoLG.png",
+    imageUrlSM: "/images/dokumentasi/samarRahmaSM.jpg",
+    imageUrlLG: "/images/dokumentasi/samarRahmaLG.jpg",
   },
   {
     type: "img",
-    imageUrlSM: "/images/dokumentasi/wheelchairSM.png",
-    imageUrlLG: "/images/dokumentasi/wheelchairLG.png",
+    imageUrlSM: "/images/dokumentasi/samarTowerSM.jpg",
+    imageUrlLG: "/images/dokumentasi/samarTowerLG.jpg",
+  },
+  {
+    type: "img",
+    imageUrlSM: "/images/dokumentasi/samarRameSM.jpg",
+    imageUrlLG: "/images/dokumentasi/samarRameLG.jpg",
+  },
+  {
+    type: "img",
+    imageUrlSM: "/images/dokumentasi/samarMinaSM.jpg",
+    imageUrlLG: "/images/dokumentasi/samarMinaLG.jpg",
+  },
+  {
+    type: "img",
+    imageUrlSM: "/images/dokumentasi/samarLontarSM.jpg",
+    imageUrlLG: "/images/dokumentasi/samarLontarLG.jpg",
   },
 ];
-
-// const dataDokumentasiVideo = [
-//   {
-//     type: "vid",
-//     videoUrlSM: "/videos/dokumentasi/Berangkat14SM.mp4",
-//     videoUrlLG: "/videos/dokumentasi/Berangkat14LG.mp4",
-//   },
-//   {
-//     type: "vid",
-//     videoUrlSM: "/videos/dokumentasi/Madinah1SM.mp4",
-//     videoUrlLG: "/videos/dokumentasi/Madinah1LG.mp4",
-//   },
-//   {
-//     type: "vid",
-//     videoUrlSM: "/videos/dokumentasi/Madinah11SM.mp4",
-//     videoUrlLG: "/videos/dokumentasi/Madinah11LG.mp4",
-//   },
-//   {
-//     type: "vid",
-//     videoUrlSM: "/videos/dokumentasi/Makkah2SM.mp4",
-//     videoUrlLG: "/videos/dokumentasi/Makkah2LG.mp4",
-//   },
-//   {
-//     type: "vid",
-//     videoUrlSM: "/videos/dokumentasi/Makkah3SM.mp4",
-//     videoUrlLG: "/videos/dokumentasi/Makkah3LG.mp4",
-//   },
-//   {
-//     type: "vid",
-//     videoUrlSM: "/videos/dokumentasi/Makkah21SM.mp4",
-//     videoUrlLG: "/videos/dokumentasi/Makkah21LG.mp4",
-//   },
-//   {
-//     type: "vid",
-//     videoUrlSM: "/videos/dokumentasi/Makkah23SM.mp4",
-//     videoUrlLG: "/videos/dokumentasi/Makkah23LG.mp4",
-//   },
-//   {
-//     type: "vid",
-//     videoUrlSM: "/videos/dokumentasi/Makkah28SM.mp4",
-//     videoUrlLG: "/videos/dokumentasi/Makkah28LG.mp4",
-//   },
-// ];
 
 const dataDokumentasiVideo = [
   {
     type: "vid",
-    videoUrlSM: "/videos/dokumentasi/pelataran1SM.mp4",
-    videoUrlLG: "/videos/dokumentasi/pelataran1LG.mp4",
+    videoUrlSM: "/videos/dokumentasi/samarArafahSM.mp4",
+    videoUrlLG: "/videos/dokumentasi/samarArafahLG.mp4",
   },
   {
     type: "vid",
-    videoUrlSM: "/videos/dokumentasi/pelataran1SM.mp4",
-    videoUrlLG: "/videos/dokumentasi/pelataran1LG.mp4",
+    videoUrlSM: "/videos/dokumentasi/samarLabbaikSM.mp4",
+    videoUrlLG: "/videos/dokumentasi/samarLabbaikLG.mp4",
   },
   {
     type: "vid",
-    videoUrlSM: "/videos/dokumentasi/pelataran1SM.mp4",
-    videoUrlLG: "/videos/dokumentasi/pelataran1LG.mp4",
-  },
-  {
-    type: "vid",
-    videoUrlSM: "/videos/dokumentasi/pelataran1SM.mp4",
-    videoUrlLG: "/videos/dokumentasi/pelataran1LG.mp4",
-  },
-  {
-    type: "vid",
-    videoUrlSM: "/videos/dokumentasi/tawaf1SM.mp4",
-    videoUrlLG: "/videos/dokumentasi/tawaf1LG.mp4",
-  },
-  {
-    type: "vid",
-    videoUrlSM: "/videos/dokumentasi/tawaf1SM.mp4",
-    videoUrlLG: "/videos/dokumentasi/tawaf1LG.mp4",
-  },
-  {
-    type: "vid",
-    videoUrlSM: "/videos/dokumentasi/tawaf1SM.mp4",
-    videoUrlLG: "/videos/dokumentasi/tawaf1LG.mp4",
-  },
-  {
-    type: "vid",
-    videoUrlSM: "/videos/dokumentasi/tawaf1SM.mp4",
-    videoUrlLG: "/videos/dokumentasi/tawaf1LG.mp4",
+    videoUrlSM: "/videos/dokumentasi/samarOpeningSM.mp4",
+    videoUrlLG: "/videos/dokumentasi/samarOpeningLG.mp4",
   },
 ];
 

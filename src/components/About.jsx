@@ -1,4 +1,5 @@
 import dataCompany from "../../public/docs/dataCompany";
+import LazyImage from "../helpers/LazyImage";
 
 function About() {
   return (
@@ -14,7 +15,7 @@ function About() {
       {/* CEO */}
       <div className=" flex items-center gap-4">
         <div className=" w-20 h-auto ">
-          <img
+          <LazyImage
             src={dataCompany.ceoImage}
             className=" w-full h-full rounded-full shadow-sm shadow-accent-400"
             alt={dataCompany.ceoName}
@@ -30,7 +31,7 @@ function About() {
       <div className=" flex flex-col md:flex-row space-x-2">
         {/* Gambar Kantor */}
         <div className=" w-24 h-auto">
-          <img
+          <LazyImage
             src={dataCompany.cityImage}
             className=" w-full h-full aspect-square rounded-md"
             alt={dataCompany.city}

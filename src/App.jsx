@@ -13,6 +13,7 @@ import dataPaket from "../public/docs/dataPaket";
 import dataCompany from "../public/docs/dataCompany";
 import About from "./components/About";
 import ButtonCTA from "./components/ButtonCTA";
+import Footer from "./components/Footer";
 
 function App() {
   const [currentSection, setCurrentSection] = useState("");
@@ -100,6 +101,8 @@ function App() {
           <ButtonCTA />
         </div>
       </FramerReveal>
+
+      <Footer />
     </div>
   );
 }
