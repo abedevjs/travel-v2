@@ -12,7 +12,7 @@ function Footer() {
           &copy; Content {`${currentYear}`} {dataCompany.companyLawName}
         </p>
         <p className="w-full text-xs md:text-sm font-light md:text-center ">
-          &copy; Design {`${currentYear}`}. Created with 💌 by{" "}
+          &copy; Design {`${currentYear}`}. Created with 💛 by{" "}
           <a
             href={`https://api.whatsapp.com/send/?phone=6283138256440&text=Assalaamu+'alaikum...+Saya+dapat+nomor+ini+dari+webpage+${dataCompany.companyShortName}%21&type=phone_number&app_absent=0`}
             target="_blank"

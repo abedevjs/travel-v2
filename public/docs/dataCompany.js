@@ -1,7 +1,7 @@
 const dataCompany = {
-  companyLongName: "Safa Marwa Tour & Travel",
-  companyShortName: "Safa Marwa",
-  companyLawName: "PT. Safa Marwa Tour & Travel",
+  companyLongName: "Safa Marwah Tour & Travel",
+  companyShortName: "Safa Marwah",
+  companyLawName: "PT. Safa Marwah Tour & Travel",
   year: "2024",
   ceoName: "Hj. Norma Intan",
   ceoImage: "/images/ceo.jpeg",

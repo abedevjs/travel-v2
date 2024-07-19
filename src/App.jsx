@@ -92,9 +92,11 @@ function App() {
       </div>
 
       <FramerReveal>
-        <DividerSection
-          title={`Mari mengunjungi Baitul Haram bersama ${dataCompany.companyShortName}`}
-        />
+        <div className="w-full mt-32 mb-10 text-center">
+          <p className="  text-[clamp(1rem,0rem+4.4444vw,2.5rem)] font-extrabold text-transparent bg-clip-text inline-block bg-gradient-to-b from-accent-300 to-accent-600">
+            {`Mari ke Baitul Haram bersama ${dataCompany.companyShortName}`}{" "}
+          </p>
+        </div>
       </FramerReveal>
       <FramerReveal>
         <div className=" w-fit mx-auto mb-8">

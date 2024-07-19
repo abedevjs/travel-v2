@@ -11,7 +11,7 @@ function GalleryGrid({ data = [] }) {
   const isMobileMode = useMediaQuery({ query: "(max-width: 640px)" });
   const isTabletMode = useMediaQuery({ query: "(max-width: 900px)" });
 
-  const limit = isMobileMode ? 8 : isTabletMode ? 12 : 15;
+  const limit = isMobileMode ? 10 : isTabletMode ? 12 : 15;
 
   return (
     <div className="">

@@ -28,7 +28,7 @@ function About() {
       </div>
 
       {/* ADDRESS */}
-      <div className=" flex flex-col md:flex-row space-x-2">
+      <div className=" flex flex-col md:flex-row md:space-x-4">
         {/* Gambar Kantor */}
         <div className=" w-24 h-auto">
           <LazyImage
@@ -37,13 +37,15 @@ function About() {
             alt={dataCompany.city}
           />
         </div>
-        <div className="flex flex-col  space-y-4">
+        {/* Alamat Kantor */}
+        <div className=" mt-2 md:mt-0 flex flex-col md:self-center">
           <p>
             Alamat kantor: <br />{" "}
             <span className=" text-[clamp(0.8rem,0.6925rem+0.4776vw,1.2rem)] font-light">
               {dataCompany.address}
             </span>
           </p>
+          {/* Link GoogleMap */}
           <span className="text-[clamp(0.8rem,0.6925rem+0.4776vw,1.2rem)] font-light">
             Lihat alamat di{" "}
             <a
