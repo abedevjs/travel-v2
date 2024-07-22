@@ -5,12 +5,12 @@ function Logo() {
     <div className="flex items-center gap-2 md:gap-4 lg:gap-6">
       {/* Logo */}
       <div className=" w-[clamp(2rem,1.4627rem+2.3881vw,4rem)] h-auto inline-block">
-        {/* <img
+        <img
           className="block h-full w-full rounded-full"
           src="/images/logo/logoSM.jpg"
           alt="Logo"
-        /> */}
-        <svg
+        />
+        {/* <svg
           id="logo-15"
           width="100%"
           height="100%"
@@ -35,7 +35,7 @@ function Logo() {
             d="M47 12.75C47 6.53679 41.9632 1.5 35.75 1.5H24.5V12.75C24.5 18.9632 29.5368 24 35.75 24C41.9632 24 47 18.9632 47 12.75Z"
             fill="#17CF97"
           ></path>{" "}
-        </svg>
+        </svg> */}
       </div>
       {/* Name */}
       <span className=" text-accent-400 text-[clamp(0.8rem,0.4776rem+1.4328vw,2rem)] font-semibold">
